@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navcontainer{
+    background-color: #006000;
+    width: 100%;
+    height: 28vh;
+    
+}
+.logo{
+    float:left;
+    padding: 15px;
+    width: 150px;
+}
+.logo img{
+width: 80%;
+}
+.navbar h3,p{
+    color: aliceblue;
+    padding:10px 0 0 0;
+}
+.navbar p{
+    font-size: 20px;
+}
+.box{
+    top:9px;
+    right: 30px;
+    font-size: 18px;
+    position:absolute;
+}
+.box h4{
+
+}
+.box h4 a{
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    background-color: orange;
+    padding: 10px;
+}
+.navlinks{
+    display: flex;
+    justify-content:center;
+    padding-top: 25px;
+}
+.navlinks li{
+    list-style-type: none;
+}
+.navlinks li a{
+    color: yellow;
+    text-decoration: none;
+    font-size: 21px;
+    letter-spacing: 1.1px;
+    padding:0px 34px 0px 0px;
+}
+.navlinks i{
+    font-size: 16px;
+    padding: 0 0 0px 1px;
+    
+}
+.box1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 0px 0px 0px 0px;
+}
+.box1 a i{
+    font-size: 25px;
+    padding:2px 0px 0px 30px;
+}
+.navlinks .active a{
+    color:white;
+}
+.navlinks .active li a{
+    color: rgb(91, 94, 94);;
+}
+.navlinks .active2 a{
+    color: white;
+}
+.navlinks .active2 li a{
+    color: rgb(91, 94, 94);
+}
+.navlinks .active3 a{
+    border: 1px solid yellow;
+    padding: 4px 7px 4px 7px;
+}
+.navlinks .active3 li a{
+    border: none;
+}
+.navlinks .active3{
+    padding-right:20px;
+}
+.navlinks li ul{
+    position: absolute;
+}
+.navlinks li ul li {
+    background-color: rgb(255, 255, 255);
+    border-bottom:1px solid rgb(243, 241, 241) ;   
+    padding: 20px 10px 10px;
+    width: 310px;
+    display: none;
+    transition: 1s;
+}
+.navlinks li ul li i{
+    padding:0 0 0 30px; 
+}
+.navlinks li ul li a{
+    color: rgb(91, 94, 94);
+    font-weight: 300;
+    letter-spacing: 0;
+    word-spacing: 2px;
+    padding: 20px;
+}
+.navlinks li ul li:hover{
+    background-color: yellow;
+}
+.navlinks li ul li a:hover{
+    color: rgb(44, 44, 221);
+}
+.navlinks li:hover ul li {
+    display:block;
+    
+}
+.navlinks li ul li ul{
+    top:60%;
+    left: 60%;
+}
+.navlinks li ul li .dropdown {
+    display: none;
+    left: 80%;
+}
+.navlinks li ul li:hover .dropdown{
+    display: block;
+}
+.navlinks li ul li .dropdown1{
+    top: 0px;
+    left: 90%;
+    display: none;
+}
+.navlinks li ul li:hover .dropdown1{
+    display: block;
+}
+.navlinks li .dropdown2{
+    right: 0px;
+}
+.slider{
+    width: 100%;
+    height: 530px;
+    overflow: hidden;
+  /*  position:*/
+}
+.slider img{
+    width: 100%;
+    /*position: 
+    opacity: 0;
+    transition: opcity 1s;*/
+}
+.slider img:first-child{
+    opacity: 1;
+}
+@keyframes slider{
+    0%{
+        opacity: 0;
+    }
+    20%{
+
+    }
+}
+.continue{
+    background-color: #4169e1;
+    padding: 0px;
+    color: aliceblue;
+    font-size: 23px;
+}
+.continue img{
+    width: 40px;
+}
+.news{
+    display: flex;
+    background-image:linear-gradient(to bottom,white,green);
+    padding-bottom: 30px;
+}
+.news div{
+    padding: 40px 20px 0px 70px;
+}
+.news div h3{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    color:white;
+    text-shadow: white;
+}
+.news .event img{
+    width:50px ;
+}
+.news .event h2{
+    font-size: 30px;
+    color: #4169e1;
+}
+.news .event marquee{
+    color:rgb(87, 86, 86);
+    height: 120px;
+    font-size: 25px;
+    border-bottom: 2px solid white;
+}
+.about{
+    background-image: url(/images/tkfront5.jpg);
+   display: flex;
+    width: 100%;
+    height: 100vh;
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   
+}
+.about::before{
+    content: '';
+    left: 0;
+    right: 0;
+    height:100vh ;
+    width: 100%;
+    position: absolute;
+    background-color:rgba(0,0,0,0.80);
+}
+.about .para {
+    padding: 20px 25px 0 25px;
+    box-shadow:0px 0px 0px  rgba(245, 20, 20, 0.9);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    z-index: 10;
+}
+.para h2{
+    color: #30a9fa;
+    font-size: 45px;
+}
+.crest{
+    display: flex;
+    background-image: url(/images/photo-1448375240586-882707db888b.avif);
+    background-size: cover;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.crest1 h1{
+    padding-top: 20px;
+    font-size: 60px;
+    font-style: italic;
+    color: yellow;
+}
+.container{
+    width:90%;
+    padding-left: 200px;
+}
+.crest1 .heading{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 50px;
+}
+.heading h3{
+    font-size: 25px;
+    line-height: 40px;
+    padding-left: 60px;
+    color: white;
+}
+.moto{
+    padding-top: 20px;
+}
+.moto h1{
+    font-size: 50px;
+    color: yellow;
+    font-style: italic;
+}
+.moto h2{
+    font-size: 30px;
+    color:rgb(245, 245, 49);
+}
+.moto h3{
+    font-size: 25px;
+    padding-top: 30px;
+    line-height: 50px;
+    color: white;
+}
+.course{
+    background-image:url(/images/students-attending-an-economys-lesson-of-tim-harford-at-the-bocconi-univesity-in-milan-italy-2G5369A.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+    display: flex;
+}
+.course::before{
+    content: '';
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 86vh;
+    position: absolute;
+    background-color:rgba(0,0,0,0.70);
+}
+.container1{
+padding: 60px 50px 0px 50px;
+display: grid;
+grid-template-columns:1fr 1fr 1fr;
+z-index: 20;
+}
+.container1 h4{
+font-size: 30px;
+color: aliceblue;
+}
+.container1 li{
+    font-size: 22px;
+    margin-left: 40px;
+    padding-top: 25px;
+    color: aliceblue;
+    font-weight: 700;
+}
+.contact{
+background-image: url(/images/pexels-photo-1310532.webp);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+width: 100%;
+padding-bottom: 40px;
+}
+.heading1{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 30px;
+   color: aliceblue;
+}
+.heading1 h2{
+    color:white;
+}
+.icon{
+ display: flex;
+ justify-content:space-evenly;
+ align-items: center;
+ font-size: 25px;
+ padding: 40px 0px 0px 220px;
+}
+.icon i{
+    font-size: 80px;
+    color: rgb(255, 51, 0);
+}
+.icon h2{
+    font-size: 28px;
+    padding: 20px 100px 0px 0px;
+   color: rgb(179, 176, 176);
+}
+.icon a{
+    text-decoration: none;
+}
+.location iframe{
+    width: 100%;
+}
+.location h2{
+    text-align: center;
+    font-size: 30px;
+    color: #4169e1;
+
+}
+.copy{
+    background-color: #006000;
+}
+.copy p{
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+}
